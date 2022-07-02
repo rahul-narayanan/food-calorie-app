@@ -1,0 +1,163 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+.mainContainer {
+	position: relative;
+	width: 100%;
+    height: 100%;
+    padding: 0 !important;
+}
+
+.logo {
+	height: 40px;
+	margin-right: 10px;
+}
+
+.container {
+	display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 65px;
+}
+
+.container .content {
+	flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+.container .login {
+	margin: 8% auto;
+}
+
+.container .register {
+	margin: 8% auto;
+	width: 30%;
+}
+
+.userProfileContent {
+	position: absolute;
+	right: 0;
+}
+
+.circleLoader span{
+	margin: 10% auto;
+    display: block;
+}
+
+.headerLink {
+	color: white;
+	margin-left: 30px;
+	padding-top: 5px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.headerLink:hover, .headerLink.selected {
+	color: gold;
+}
+
+.headerLink:hover {
+	text-decoration: none;
+}
+
+.rs-picker-daterange .rs-picker-toggle-caret {
+	position: absolute;
+	left: 0;
+}
+
+.rs-picker-toggle-value {
+	padding-left: 10px;
+}
+
+.rs-picker-toggle-textbox {
+	padding-left: 20px !important;
+}
+
+.MuiAvatar-root {
+	font-size: 18px !important;
+}
+
+.MuiTableRow-root .actionIcon {
+	visibility: hidden;
+}
+
+.MuiTableRow-root:hover .actionIcon{
+	visibility: visible;
+}
+
+.MuiTableRow-root:hover {
+	cursor: pointer;
+}
+
+.cheatMeal {
+	color: rgba(210, 35, 35, 10)
+}
+
+.cheatMeal svg {
+	display: inline-block;
+    vertical-align: middle;
+	margin-right: 5px;
+}
+
+.reportsContainer {
+	overflow-y: auto;
+	height: 800px;
+}
+
+.adminReportsContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.entriesReport, .averageReport {
+	flex-grow: 1;
+    flex-basis: 0;
+    margin: 1% auto 2%;
+	padding: 0% 3%;
+}
+
+.adminReportsContainer .userReport {
+	width: 30%;
+	padding: 0% 3%;
+	border-right: 1px solid #e5e5e5;
+	flex-grow: 1;
+    flex-basis: 0;
+}
+
+.entriesReport {
+	border-right: 1px solid #e5e5e5;
+	flex-grow: 1;
+    flex-basis: 0;
+}
+
+.averageReport .MuiTypography-subtitle1, .userReport .MuiTypography-subtitle2 {
+	margin-bottom: 30px;
+}
+
+.entriesReport .MuiTypography-subtitle1 {
+	margin-bottom: 20px;
+}
+
+.userReportsContainer {
+	display: flex;
+	width: 100%;
+	height: 75%;
+}
+
+.userReport {
+	margin: 5% auto 0%;
+}
+
+.userReportsContainer .userReport {
+	width: 40%;
+}
+
+.userReport.noData {
+	margin-top: 10%;
+}

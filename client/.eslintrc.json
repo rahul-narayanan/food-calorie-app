@@ -1,0 +1,79 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "quotes": ["error", "double"],
+    "comma-dangle": ["error", "never"],
+    "no-unused-vars": ["off"],
+    "import/prefer-default-export": 0,
+    "default-param-last": 0,
+    "no-param-reassign": 0,
+    "no-unused-expressions": 0,
+    "indent": [2,4],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-indent-props": [2, 4],
+    "react/jsx-indent": [2, 4],
+    "react/jsx-props-no-spreading": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "import/order": 0,
+    "no-plusplus": 0,
+    "prefer-destructuring": [
+      1,
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": true,
+          "object": true
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "no-underscore-dangle": [
+      0,
+      {
+        "allow": [],
+        "allowAfterThis": false,
+        "allowAfterSuper": false,
+        "enforceInMethodNames": false
+      }
+    ],
+    "max-len": [
+      "error",
+      200,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": false,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "react/react-in-jsx-scope": 0,
+    "react/style-prop-object": 0,
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0
+  }
+}
